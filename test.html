@@ -2,11 +2,23 @@
 <html lang=en>
   <link rel="stylesheet" type="text/css" href="main.css"> 
 <head>
+	<script>
+	document.createElement('header');
+	document.createElement('nav');
+	document.createElement('footer');
+	document.createElement('article');
+</script><!-- you no longer need to state what type of script as JS is presumed as default -->
+<!-- to make IE play nice, JS had to be added so that it sees the HTML5 tags and the CSS is applied as such -->
 	<title> HTML5 Sandbox, testing and developing</title>
 <meta charset=utf-8> <!-- HTML5 is not xml lang, so no need to use quoted attribs, however if you still want to it will work -->
 </head>
 <body>
-	<header><h1>This is a H1 heading, inside a header tag</h1> </header>
+	<header><h1>This is a H1 heading, inside a header tag</h1>
+		<hgroup>
+			<h2>Welcome to HTML5</h2>
+			<h3>we're the future of the web, so you know.</h3s>
+			</hgroup>
+		 </header>
 	
 	<nav>
 		<h2>Menu</h2>
@@ -23,6 +35,16 @@
 		<h2>This is a H2 tag inside an article</h2>
 		<p>it can be used over, much like a generic article</p>
 		</article>
+		
+		<article>
+			<header>
+				<h2>Articles can have headings also.</h2>
+				</header>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam eu nulla. Donec lobortis purus vel urna. Nunc laoreet lacinia nunc.</p>
+		<footer>
+			<small>pssst.. they can also have footers</small>
+			</footer>	
+			</article>
 		
 		<footer>
 			<p>footers also have their own tag</p>
